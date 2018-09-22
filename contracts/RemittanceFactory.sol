@@ -14,7 +14,7 @@ contract RemittanceFactory {
         address owner = msg.sender;
         address newRemittance = (new Remittance).value(address(this).balance)(owner, _transferRecipient, _hashedPassword1, _hashedPassword2, _secToDeadline);
         deployedRemittances.push(newRemittance);
-    }
+    }   
 
     function getDeployedRemittances() public view returns (address[]) {
         return deployedRemittances;
