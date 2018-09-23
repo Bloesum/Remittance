@@ -19,7 +19,7 @@ contract Remittance {
         require(_hashedPassword2[0] != 0);
         require(_secToDeadline > 0);
         transferRecipient = _transferRecipient;
-        hashedPassword1 = _hashedPassword1; // NB: initial password are being hashed offchain
+        hashedPassword1 = _hashedPassword1; // NB: initial passwords are being hashed offchain
         hashedPassword2 = _hashedPassword2;
         amount = msg.value;
         owner = _owner;
